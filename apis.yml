@@ -1,7 +1,26 @@
 aid: dimeq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dimeq.png
 name: Dimeq
-description: Dimeq is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Dimeq is a Norwegian maritime safety technology company working to prevent loss of life
+  at sea and set new health, safety and environmental (HSE) standards for the maritime sector. Its Eye-D
+  System is an IoT-based digital ecosystem that delivers real-time positioning of crew and passengers to
+  one-meter accuracy during emergencies, man-overboard detection using environmental sensors, automatic
+  mustering that registers people in seconds, and statistical analysis for accident documentation and
+  prevention, while keeping data anonymous and GDPR-compliant outside of emergencies. The D-Router gateway
+  supports Wi-Fi, Ethernet, PLC, fiber optics, UWB, Bluetooth, LoRa, ZigBee and MATTER connectivity. This
+  is a hardware/IoT product company with no public developer portal, API, SDK or documentation surface at
+  the time of enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/dimeq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Maritime
+- Safety
+- IoT
+- Man Overboard Detection
+- Emergency Response
+- HSE
+- Real-Time Positioning
+- Norway
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dimeq-domain-security.yml
 - type: Website
   url: https://dimeq.no/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
